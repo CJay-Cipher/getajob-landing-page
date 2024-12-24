@@ -1,0 +1,249 @@
+.how_section {
+    min-height: 100vh;
+    padding: 7vh 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    /* flex-wrap: wrap; */
+    margin-bottom: 5vh;
+}
+
+/* =================== LEFT SECTION ==================== */
+.how_section .left_side {
+    width: 55%;
+    /* min-width: 600px; */
+    /* min-height: 700px; */
+    display: flex;
+    gap: 8%;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+}
+.how_section .left_side .first_left_side,
+.how_section .left_side .second_left_side {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    /* border: 2px solid red; */
+}
+.how_section .left_side .first_left_side {
+    flex-direction: column;
+    gap: 8%;
+}
+.how_section .left_side .second_left_side {
+    align-items: center;
+}
+
+.how_section .left_side .first_left_side .image_card:nth-child(2) {
+    transform: translateX(8%);
+}
+
+.how_section .left_side .image_card {
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #eee;
+    overflow: hidden;
+}
+.how_section .left_side .image_card:hover {
+    animation: cardShake 1s ease-in-out;
+}
+.how_section .left_side .image_card img {
+    width: 100%;
+}
+.how_section .left_side .image_card .how_job_card_info {
+    height: 7vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #ff00dd; */
+}
+.how_section .left_side .image_card .how_job_card_info h4 {
+    font-weight: 500;
+    text-align: center;
+}
+.how_section .left_side .image_card .how_job_card_info h4 span {
+    color: #06942a;
+}
+
+/* =================== RIGHT SECTION ==================== */
+.how_section .right_side {
+    width: 38%;
+    /* border: 2px solid blue; */
+}
+.how_section .right_side > * {
+    margin-bottom: 40px;
+}
+.how_section .right_side > h2 {
+    font-size: 38px;
+    line-height: 1;
+    color: #3f403f;
+    /* border: 2px solid blue; */
+}
+.how_section .right_side p {
+    line-height: 2;
+    font-size: 18px;
+}
+.how_section .right_side .all_how_point {
+    margin-left: 15px;
+    /* border: 2px solid blue; */
+}
+.how_section .right_side .all_how_point .how_point {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    /* border: 2px solid blue; */
+}
+/* .how_section .right_side .how_point > * {
+    border: 1px solid red;
+} */
+.how_section .right_side .all_how_point .how_point .how_point_title {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+}
+.how_section .right_side .all_how_point .how_point .how_point_title .point_title_icon {
+    position: relative;
+    left: 16px;
+}
+.how_section .right_side .all_how_point .how_point .how_point_title .point_title_icon::before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    background-color: #dff5e2;
+    border-radius: 50%;
+    left: -16px;
+    top: -2px;
+    z-index: -1;
+}
+.how_section .right_side .how_point .how_point_title h4 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.how_section .right_side .how_point p {
+    font-size: 18px;
+}
+
+@keyframes cardShake {
+    10%,
+    30%,
+    50% {
+        rotate: 3deg;
+    }
+    20%,
+    40%,
+    60% {
+        rotate: -3deg;
+    }
+
+    70%,
+    90% {
+        rotate: 1deg;
+    }
+    80%,
+    98% {
+        rotate: -1deg;
+    }
+    100% {
+        rotate: 0;
+    }
+}
+
+/* ======================= RESPONSIVENESS ====================== */
+@media (max-width: 1400px) {
+    .how_section {
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 5vh;
+        /* align-items: center; */
+        /* border: 1px solid red; */
+    }
+    /* --------------- LEFT SECTION --------------- */
+    .how_section .left_side {
+        width: max-content;
+        gap: 0;
+    }
+    .how_section .left_side .first_left_side,
+    .how_section .left_side .second_left_side {
+        height: auto;
+        width: auto;
+        gap: 0;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    .how_section .left_side .first_left_side {
+        flex-direction: row;
+    }
+    .how_section .left_side .first_left_side > *,
+    .how_section .left_side .second_left_side > * {
+        width: 280px;
+        height: 280px;
+        margin-right: 10px;
+        border: 2px solid red;
+    }
+
+    .how_section .left_side .first_left_side .image_card:nth-child(2) {
+        transform: translateX(0);
+    }
+    .how_section .left_side .image_card .how_job_card_info {
+        height: auto;
+        border: 2px solid #ff00dd;
+    }
+    .how_section .left_side .image_card .how_job_card_info h4 {
+        font-size: 15px;
+    }
+
+    /* ---------------- RIGHT SECTION ---------------- */
+    .how_section .right_side {
+        width: 100%;
+        /* padding: 0 8%; */
+        padding-right: 15%;
+        /* border: 2px solid blue; */
+    }
+    .how_section .right_side > h2 {
+        text-align: center;
+    }
+}
+@media (max-width: 1000px) {
+    .how_section .left_side .first_left_side > *,
+    .how_section .left_side .second_left_side > * {
+        width: 230px;
+        height: 250px;
+    }
+}
+@media (max-width: 800px) {
+    .how_section {
+        min-height: auto;
+        margin-top: 10vh;
+        padding: 20px 0;
+        /* border: 2px solid blue; */
+    }
+    .how_section .left_side {
+        display: none;
+    }
+    .how_section .right_side > h2 {
+        font-size: 30px;
+    }
+    .how_section .right_side {
+        width: 100%;
+        /* padding: 0 8%; */
+        padding: 0;
+        /* border: 2px solid blue; */
+    }
+    .how_section .right_side p {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .how_section .right_side .how_point .how_point_title h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .how_section .right_side .how_point p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

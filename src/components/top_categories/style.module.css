@@ -1,0 +1,98 @@
+.top_categories {
+    min-height: 100vh;
+    padding-top: 5vh;
+    /* border: 2px solid red; */
+}
+
+.top_categories h1 {
+    font-size: 40px;
+    text-align: center;
+}
+.top_categories .cat_container {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    /* border: 1px solid green; */
+}
+.top_categories .cat_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8vh 20px;
+    border: 2px solid #e6f4ea;
+    text-align: center;
+    transition: 0.3s;
+}
+.top_categories .cat_card:hover {
+    scale: 1.1;
+    background-color: #f6fef8;
+}
+.top_categories .cat_card .cat_image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f4ea;
+    border-radius: 50%;
+}
+.top_categories .cat_card .cat_image img {
+    width: 35px;
+}
+.top_categories .cat_card h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.top_categories .cat_card p {
+    color: #ababab;
+    font-weight: 600;
+}
+@media (max-width: 800px) {
+    /* .top_categories {
+        margin-top: 2vh;
+    } */
+    .top_categories h1 {
+        font-size: 30px;
+    }
+    .top_categories .cat_container {
+        /* justify-items: center; */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+    .top_categories .cat_card {
+        padding: 4vh 10px;
+    }
+    .top_categories .cat_card .cat_image {
+        width: 80px;
+        height: 80px;
+    }
+    .top_categories .cat_card .cat_image img {
+        width: 30px;
+    }
+    .top_categories .cat_card h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .top_categories .cat_card p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+@media (max-width: 600px) {
+    .top_categories .cat_container {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 5px;
+    }
+    .top_categories .cat_card h3 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .top_categories .cat_card p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
