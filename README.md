@@ -2,7 +2,7 @@
 
 ![GetaJobNG](public/getajob.png)
 
-This project is a clone of the GetaJobNG landing page, a recruitment support platform and service that connects job seekers with various career opportunities in Nigeria.
+This project is a clone of the GetaJobNG landing page, a recruitment support platform and service that connects job seekers with various career opportunities in Nigeria. The design for this project was inspired by a Figma prototype, which can be found [here](<https://www.figma.com/design/s3nZ9JdH3dV5wAQJmzmBih/GetAJob-(Copy)?node-id=2-2&t=1Lj8y0t2q5UnBGXt-0>).
 
 ## Table of Contents
 
@@ -50,7 +50,7 @@ To run this project locally, follow these steps:
     npm install
     ```
 
-4. Start the development server:
+4. Start the development server using Vite:
 
     ```bash
     npm run dev
