@@ -729,7 +729,7 @@ button {
     font-size: 40px;
   }
   .main-header .menu-hamburger {
-    cursor: none;
+    cursor: default;
     top: calc(var(--header-margin-top) + 3px);
   }
   /* ================= JOBS  ==================== */
